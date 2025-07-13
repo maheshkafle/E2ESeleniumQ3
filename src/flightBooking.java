@@ -14,6 +14,10 @@ public class flightBooking {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
+		
+		//Checkbox selection
+		driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).click();
+		
 		driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
 		Thread.sleep(1000);
 		
